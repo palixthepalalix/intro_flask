@@ -14,3 +14,8 @@ Write a flask app in `hello.py`. This app should simply return 'Hello World' reg
 Test your app by running `hello_tests.py`.
 
 
+###Need Help?
+
+The [Flask website](http://flask.pocoo.org/) is a incredible resouce.
+[Stack Over](http://stackoverflow.com/) is great as well.
+
