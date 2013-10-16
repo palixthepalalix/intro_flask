@@ -16,6 +16,6 @@ Test your app by running `hello_tests.py`.
 
 ###Need Help?
 
-The [Flask website](http://flask.pocoo.org/) is a incredible resouce.
+The [Flask website](http://flask.pocoo.org/) is a incredible resource.
 [Stack Over](http://stackoverflow.com/) is great as well.
 

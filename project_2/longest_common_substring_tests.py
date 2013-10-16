@@ -1,7 +1,7 @@
 
 import longest_common_substring as lcs
 import unittest
-import simplejson
+import json
 
 class HelloTestCase(unittest.TestCase):
 
@@ -36,12 +36,12 @@ class HelloTestCase(unittest.TestCase):
 
     def test_api_call(self):
         err_msg = "API call returning wrong substring"
-        json = simplejson.dumps({
+        json = json.dumps({
             'string1': 'abc',
             'string2': 'abc'
         })
         resp = self.app.post('/lcs', data=json)
-        answer = simplejson.loads(resp.data)['longest_common_substring']
+        answer = json.loads(resp.data)['longest_common_substring']
         self.assertEqual(answer, 'abc', err_msg)
 
 

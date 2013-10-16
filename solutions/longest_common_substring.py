@@ -1,6 +1,6 @@
 
 from flask import Flask, request
-import simplejson
+import json
 app = Flask(__name__)
 
 
@@ -19,12 +19,12 @@ def longest_common_substring(s1, s2):
 
 @app.route('/lcs', methods=['POST'])
 def lcs():
-    data = simplejson.loads(request.data)
+    data = json.loads(request.data)
     string1 = data['string1']
     string2 = data['string2']
     response_json = {'longest_common_substring':
         longest_common_substring(string1, string2)}
-    return simplejson.dumps(response_json), 200
+    return json.dumps(response_json), 200
 
 
 if __name__ == '__main__':
