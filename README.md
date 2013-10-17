@@ -12,8 +12,7 @@ A simple Hello World app.
 
 ###Project 2
 
-To be made
-
+A straightforward web API that reads in JSON, does some calculations and returns a JSON.
 
 ##Solutions
 
